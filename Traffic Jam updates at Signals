@@ -1,0 +1,164 @@
+const int l1=2;
+const int l2=3;
+const int l3=4;
+const int l4=5;
+const int l5=6;
+const int l6=7;
+const int l7=8;
+const int l8=9;
+const int l9=10;
+const int l10=11;
+const int l11=12;
+const int l12=13;
+void setup() {
+  // put your setup code here, to run once:
+pinMode(l1,OUTPUT);
+pinMode(l2,OUTPUT);
+pinMode(l3,OUTPUT);
+pinMode(l4,OUTPUT);
+pinMode(l5,OUTPUT);
+pinMode(l6,OUTPUT);
+pinMode(l7,OUTPUT);
+pinMode(l8,OUTPUT);
+pinMode(l9,OUTPUT);
+pinMode(l10,OUTPUT);
+pinMode(l11,OUTPUT);
+pinMode(l12,OUTPUT);
+pinMode(A0,INPUT);
+pinMode(A1,INPUT);
+pinMode(A2,INPUT);
+pinMode(A3,INPUT);
+Serial.begin(9600);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  int p1=digitalRead(A0);
+  int p2=digitalRead(A1);
+  int p3=digitalRead(A2);
+  int p4=digitalRead(A3);
+  Serial.println(p1);
+  Serial.println(p2);
+  Serial.println(p3);
+  Serial.println(p4);
+
+if(p1==1 && p2==0 && p3==0 && p4==0)
+{
+  digitalWrite(l1,LOW);
+  digitalWrite(l2,LOW);
+  digitalWrite(l3,HIGH);
+  digitalWrite(l4,LOW);
+  digitalWrite(l5,LOW);
+  digitalWrite(l6,LOW);
+  digitalWrite(l7,LOW);
+  digitalWrite(l8,LOW);
+  digitalWrite(l9,LOW);
+  digitalWrite(l10,LOW);
+  digitalWrite(l11,LOW);
+  digitalWrite(l12,LOW);
+  delay(10000);
+}
+ if(p2==1 && p1==0 && p3==0 && p4==0)
+{
+  digitalWrite(l1,LOW);
+  digitalWrite(l2,LOW);
+  
+  digitalWrite(l3,LOW);
+  digitalWrite(l4,LOW);
+  digitalWrite(l5,LOW);
+  digitalWrite(l6,HIGH);
+  digitalWrite(l7,LOW);
+  digitalWrite(l8,LOW);
+  digitalWrite(l9,LOW);
+  digitalWrite(l10,LOW);
+  digitalWrite(l11,LOW);
+  digitalWrite(l12,LOW);
+  delay(10000);
+}
+ if(p3==1 && p1==0 && p2==0 && p4==0)
+{
+  digitalWrite(l1,LOW);
+  digitalWrite(l2,LOW);
+  digitalWrite(l3,LOW);
+  digitalWrite(l4,LOW);
+  digitalWrite(l5,LOW);
+  digitalWrite(l6,LOW);
+  digitalWrite(l7,LOW);
+  digitalWrite(l8,LOW);
+  digitalWrite(l9,HIGH);
+  digitalWrite(l10,LOW);
+  digitalWrite(l11,LOW);
+  digitalWrite(l12,LOW);
+  delay(10000);
+}
+ if (p4==1 && p1==0 && p2==0 && p3==0)
+{
+  digitalWrite(l1,LOW);
+  digitalWrite(l2,LOW);
+  digitalWrite(13,LOW);
+  digitalWrite(l4,LOW);
+  digitalWrite(l5,LOW);
+  digitalWrite(l6,LOW);
+  digitalWrite(l7,LOW);
+  digitalWrite(l8,LOW);
+  digitalWrite(l9,LOW);
+  digitalWrite(l10,LOW);
+  digitalWrite(l11,LOW);
+  digitalWrite(l12,HIGH);
+  delay(10000);
+}
+
+   digitalWrite(l1,LOW);
+   digitalWrite(l2,LOW);
+   digitalWrite(l3,HIGH);
+   digitalWrite(l4,LOW);
+   digitalWrite(l5,HIGH);
+   digitalWrite(l6,LOW);
+   digitalWrite(l7,HIGH);
+   digitalWrite(l8,LOW);
+   digitalWrite(l9,LOW);
+   digitalWrite(l10,HIGH);
+   digitalWrite(l11,LOW);
+   digitalWrite(l12,LOW);
+   delay(5000);
+   digitalWrite(l1,HIGH);
+   digitalWrite(l2,LOW);
+   digitalWrite(l3,LOW);
+   digitalWrite(l4,LOW);
+   digitalWrite(l5,LOW);
+   digitalWrite(l6,HIGH);
+   digitalWrite(l7,LOW);
+   digitalWrite(l8,HIGH);
+   digitalWrite(l9,LOW);
+   digitalWrite(l10,HIGH);
+   digitalWrite(l11,LOW);
+   digitalWrite(l12,LOW);
+   delay(5000);
+   digitalWrite(l1,HIGH);
+   digitalWrite(l2,LOW);
+   digitalWrite(l3,LOW);
+   digitalWrite(l4,HIGH);
+   digitalWrite(l5,LOW);
+   digitalWrite(l6,LOW);
+   digitalWrite(l7,LOW);
+   digitalWrite(l8,LOW);
+   digitalWrite(l9,HIGH);
+   digitalWrite(l10,LOW);
+   digitalWrite(l11,HIGH);
+   digitalWrite(l12,LOW);
+   delay(5000);
+   digitalWrite(l1,LOW);
+   digitalWrite(l2,HIGH);
+   digitalWrite(l3,LOW);
+   digitalWrite(l4,HIGH);
+   digitalWrite(l5,LOW);
+   digitalWrite(l6,LOW);
+   digitalWrite(l7,HIGH);
+   digitalWrite(l8,LOW);
+   digitalWrite(l9,LOW);
+   digitalWrite(l10,LOW);
+   digitalWrite(l11,LOW);
+   digitalWrite(l12,HIGH);
+   delay(5000);
+}
